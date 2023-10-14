@@ -57,16 +57,20 @@ Yunikorn调度器能透过REST API来返回多个对象的信息
                 "ephemeral-storage": 188176871424,
                 "hugepages-1Gi": 0,
                 "hugepages-2Mi": 0,
+                "hugepages-32Mi": 0, 
+                "hugepages-64Ki": 0,
                 "memory": 1000000000,
                 "pods": 330,
                 "vcore": 1000
             },
             "usedCapacity": {
                 "memory": 800000000,
+                "pods": 10,
                 "vcore": 500
             },
             "utilization": {
                 "memory": 80,
+                "pods": 1,
                 "vcore": 50
             }
         },
@@ -82,8 +86,8 @@ Yunikorn调度器能透过REST API来返回多个对象的信息
             "Pending": 5,
             "total": 10
         },
-        "totalContainers": "0",
-        "totalNodes": "2"
+        "totalContainers": 0,
+        "totalNodes": 2
     },
     {
         "clusterId": "mycluster",
@@ -117,8 +121,8 @@ Yunikorn调度器能透过REST API来返回多个对象的信息
             "Pending": 5,
             "total": 20
         },
-        "totalContainers": "20",
-        "totalNodes": "5"
+        "totalContainers": 20,
+        "totalNodes": 5
     }
 ]
 ```
